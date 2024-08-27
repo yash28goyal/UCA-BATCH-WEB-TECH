@@ -33,3 +33,4 @@ class Student {
 }
 
 var student1 = new Student("fname5", 100);
+
