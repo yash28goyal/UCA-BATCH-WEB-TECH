@@ -85,3 +85,14 @@ var objUsingCreate1 = Object.create(obj4);
 
 //ways to create a object
 // using object literals and using constructor function using assign, create, new Object
+
+
+
+
+// prototype belong to a function no to an Object
+// we can't compare two object either they are same
+// but in case they can be compare because of inheritance
+
+// var x = {a : 1};
+// var y = x;
+// y === x // this will return true; 
