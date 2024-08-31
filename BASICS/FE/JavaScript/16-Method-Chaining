@@ -1,3 +1,23 @@
-var foo = function() {
-    
-}
+//calling a method on another method of the same object.
+var foo = function () {
+    console.log("Insider foo function");
+    return {
+      innerFunction() {
+        console.log("Insider inner function");
+      },
+    };
+  };
+  
+  foo().innerFunction();
+  
+  function infiniteConcat(initialString) {
+    this.initialString = initialString;
+    this.result = initialString;
+  
+    this.concat = function (incomingValue) {
+      this.result = this.result + " " + incomingValue;
+      return this;
+    };
+  }
+  
+  var concat1 = new infiniteConcat("string1");
